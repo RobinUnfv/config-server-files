@@ -21,4 +21,4 @@ jpa:
 datasource:
   url: ${POSTGRESQL.URL.CONNECTION:jdbc:postgresql://localhost:5432/mitocode_db}
   username: ${POSTGRES.USERNAME:postgres}
-  password: ${POSTGRES.PASSWORD:robin123}
+  password: '{cipher}15f23281c2b7fd550178334a7fb3efae6977284465705a28b486060ac3c9b1b1'
