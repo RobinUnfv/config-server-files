@@ -1,0 +1,16 @@
+server:
+  port: 9030
+
+#Mongo DB Configuration
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB.URL.CONNECTION:mongodb://robin:robin123@localhost:27017/mitocode_db?authSource=admin}
+
+#Configuracion de eureka
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA.SERVER.HOST:http://localhost:8761/eureka} 
