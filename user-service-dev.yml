@@ -5,7 +5,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: ${MONGODB.URL.CONNECTION:mongodb://robin:robin123@localhost:27017/mitocode_db?authSource=admin}
+      uri: ${MONGODB.URL.CONNECTION:mongodb://root:robin123@mongo-service:27017/mongodb?authSource=admin}
 
 #Configuracion de eureka
 eureka:
