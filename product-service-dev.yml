@@ -2,10 +2,10 @@ server:
   port: ${CUSTOM.SERVER.PORT:9020}
 
 #Mongo DB Configuration
-#spring:
-#  data:
-#    mongodb:
-#      uri: ${MONGODB.URL.CONNECTION:mongodb://robin:robin123@localhost:27017/mitocode_db?authSource=admin}
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB.URL.CONNECTION:mongodb://root:robin123@mongo-service:27017/productdb?authSource=admin}
 
 #Posqre Configuration
 jpa:
