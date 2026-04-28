@@ -2,10 +2,10 @@ server:
   port: ${CUSTOM.SERVER.PORT:9020}
 
 #Mongo DB Configuration
-spring:
-  data:
-    mongodb:
-      uri: ${MONGODB.URL.CONNECTION:mongodb://robin:robin123@localhost:27017/mitocode_db?authSource=admin}
+#spring:
+#  data:
+#    mongodb:
+#      uri: ${MONGODB.URL.CONNECTION:mongodb://robin:robin123@localhost:27017/mitocode_db?authSource=admin}
 
 #Posqre Configuration
 jpa:
@@ -21,4 +21,4 @@ jpa:
 datasource:
   url: ${POSTGRESQL.URL.CONNECTION:jdbc:postgresql://localhost:5432/mitocode_db}
   username: ${POSTGRES.USERNAME:postgres}
-  password: '{cipher}15f23281c2b7fd550178334a7fb3efae6977284465705a28b486060ac3c9b1b1'
+  password: ${POSTGRES.PASSWORD:robin123}
