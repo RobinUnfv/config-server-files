@@ -5,7 +5,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: ${MONGODB.URL.CONNECTION:mongodb://root:robin123@mongo-service:27017/productdb?authSource=admin}
+      uri: mongodb://root:robin123@mongo-service:27017/productdb?authSource=admin
 
 #Posqre Configuration
 jpa:
