@@ -1,11 +1,11 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9020}
 
-#Mongo DB Configuration
+#Mongo DB Configuration mongo-service
 spring:
   data:
     mongodb:
-      uri: mongodb://root:robin123@mongo-service:27017/productdb?authSource=admin
+      uri: mongodb://root:robin123@localhost:27017/productdb?authSource=admin
 
 #Posqre Configuration
 jpa:
