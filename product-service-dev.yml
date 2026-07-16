@@ -7,7 +7,7 @@ spring:
     mongodb:
       uri: mongodb://root:robin123@localhost:27017/productdb?authSource=admin
 
-#Posqre Configuration
+#PostgreSQL Configuration
 jpa:
   databasePlatform:
   hibernate:
@@ -19,6 +19,6 @@ jpa:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 datasource:
-  url: ${POSTGRESQL.URL.CONNECTION:jdbc:postgresql://localhost:5432/mitocode_db}
+  url: jdbc:postgresql://localhost:5432/mitocode_db
   username: ${POSTGRES.USERNAME:postgres}
   password: ${POSTGRES.PASSWORD:robin123}
