@@ -9,6 +9,7 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 30
         permittedNumberOfCallsInHalfOpenState: 5
+        automaticTransitionFromOpenToHalfOpenEnabled: false
       instances:
         prod-servi:
           baseConfig: product-service-cb
