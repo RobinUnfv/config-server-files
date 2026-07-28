@@ -1,6 +1,18 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9010}
 
+resilience4j:
+  circuitbreaker:
+    configs:
+      product-service-cb:
+        slidingWindowSize: 13
+        failureRateThreshold: 50
+        waitDurationInOpenState: 30
+        permittedNumberOfCallsInHalfOpenState: 5
+      instances:
+        prod-servi:
+          baseConfig: product-service-cb
+
 #Enable autuator
 management:
   endpoints:
